@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            border: 2px solid black;
+            padding: 20px;
+            width: 400px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        .box {
+            border: 2px solid black;
+            display: flex;
+            padding: 10px;
+        }
+        .horizontal {
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .vertical {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .horizontal div, .vertical div {
+            border: 2px solid black;
+        }
+        .horizontal div {
+            height: 40px;
+        }
+        .vertical div {
+            width: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box vertical">
+            <div style="height: 100px;"></div>
+            <div style="height: 100px;"></div>
+            <div style="height: 100px;"></div>
+        </div>
+        <div class="box horizontal">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="box horizontal">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="box vertical">
+            <div style="height: 100px;"></div>
+            <div style="height: 100px;"></div>
+            <div style="height: 100px;"></div>
+        </div>
+    </div>
+</body>
+</html>

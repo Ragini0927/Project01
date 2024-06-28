@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Visibility and Display Properties Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .display-block {
+            display: block;
+            background-color: lightblue;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        .display-inline {
+            display: inline;
+            background-color: lightgreen;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        .display-inline-block {
+            display: inline-block;
+            background-color: lightcoral;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+
+        .display-none {
+            display: none;
+        }
+
+        .visibility-visible {
+            visibility: visible;
+        }
+
+        .visibility-hidden {
+            visibility: hidden;
+        }
+
+        .opacity-half {
+            opacity: 0.5;
+        }
+
+        .overflow-hidden {
+            width: 150px;
+            height: 50px;
+            overflow: hidden;
+            background-color: lightgray;
+            margin-bottom: 10px;
+        }
+
+        .overflow-scroll {
+            width: 150px;
+            height: 50px;
+            overflow: scroll;
+            background-color: lightyellow;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Visibility and Display Properties Example</h1>
+
+    <h2>Display Properties</h2>
+    <div class="display-block">This is a block element.</div>
+    <span class="display-inline">This is an inline element.</span>
+    <span class="display-inline">This is another inline element.</span>
+    <div class="display-inline-block">This is an inline-block element.</div>
+    <div class="display-none">This element is not displayed.</div>
+
+    <h2>Visibility Properties</h2>
+    <div class="visibility-visible">This element is visible.</div>
+    <div class="visibility-hidden">This element is hidden but still takes up space.</div>
+
+    <h2>Opacity Property</h2>
+    <div class="opacity-half">This element has 50% opacity.</div>
+
+    <h2>Overflow Property</h2>
+    <div class="overflow-hidden">
+        This content is too large for the box and will be hidden.
+    </div>
+    <div class="overflow-scroll">
+        This content is too large for the box and will be scrollable.
+    </div>
+</body>
+</html>

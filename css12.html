@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS List Properties Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .list-example ul,
+        .list-example ol {
+            margin-bottom: 20px;
+        }
+
+        .disc-list {
+            list-style-type: disc;
+        }
+
+        .circle-list {
+            list-style-type: circle;
+        }
+
+        .square-list {
+            list-style-type: square;
+        }
+
+        .decimal-list {
+            list-style-type: decimal;
+        }
+
+        .lower-roman-list {
+            list-style-type: lower-roman;
+        }
+
+        .inside-list {
+            list-style-position: inside;
+        }
+
+        .outside-list {
+            list-style-position: outside;
+        }
+
+        .image-list {
+            list-style-image: url('https://via.placeholder.com/15');
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS List Properties Example</h1>
+
+    <div class="list-example">
+        <h2>Unordered Lists</h2>
+        <ul class="disc-list">
+            <li>Item with disc</li>
+            <li>Item with disc</li>
+            <li>Item with disc</li>
+        </ul>
+        
+        <ul class="circle-list">
+            <li>Item with circle</li>
+            <li>Item with circle</li>
+            <li>Item with circle</li>
+        </ul>
+        
+        <ul class="square-list">
+            <li>Item with square</li>
+            <li>Item with square</li>
+            <li>Item with square</li>
+        </ul>
+        
+        <ul class="image-list">
+            <li>Item with custom image</li>
+            <li>Item with custom image</li>
+            <li>Item with custom image</li>
+        </ul>
+    </div>
+    
+    <div class="list-example">
+        <h2>Ordered Lists</h2>
+        <ol class="decimal-list">
+            <li>Item with decimal</li>
+            <li>Item with decimal</li>
+            <li>Item with decimal</li>
+        </ol>
+        
+        <ol class="lower-roman-list">
+            <li>Item with lower-roman</li>
+            <li>Item with lower-roman</li>
+            <li>Item with lower-roman</li>
+        </ol>
+    </div>
+    
+    <div class="list-example">
+        <h2>List Position</h2>
+        <ul class="inside-list">
+            <li>Item with inside position</li>
+            <li>Item with inside position</li>
+            <li>Item with inside position</li>
+        </ul>
+        
+        <ul class="outside-list">
+            <li>Item with outside position</li>
+            <li>Item with outside position</li>
+            <li>Item with outside position</li>
+        </ul>
+    </div>
+</body>
+</html>

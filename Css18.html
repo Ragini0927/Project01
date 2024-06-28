@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position Properties Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .static {
+            position: static;
+            background-color: lightblue;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .relative {
+            position: relative;
+            background-color: lightgreen;
+            padding: 10px;
+            margin-bottom: 10px;
+            left: 20px;
+            top: 10px;
+        }
+
+        .absolute-container {
+            position: relative;
+            height: 200px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+
+        .absolute {
+            position: absolute;
+            background-color: lightcoral;
+            padding: 10px;
+            left: 50px;
+            top: 50px;
+        }
+
+        .fixed {
+            position: fixed;
+            background-color: lightyellow;
+            padding: 10px;
+            top: 10px;
+            right: 10px;
+        }
+
+        .sticky-container {
+            height: 300px;
+            overflow-y: scroll;
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .sticky {
+            position: -webkit-sticky;
+            position: sticky;
+            background-color: lightpink;
+            padding: 10px;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Position Properties Example</h1>
+
+    <div class="container">
+        <h2>Static Position</h2>
+        <div class="static">This element has a static position (default).</div>
+    </div>
+
+    <div class="container">
+        <h2>Relative Position</h2>
+        <div class="relative">This element has a relative position.</div>
+    </div>
+
+    <div class="container absolute-container">
+        <h2>Absolute Position</h2>
+        <div class="absolute">This element has an absolute position.</div>
+    </div>
+
+    <div class="container">
+        <h2>Fixed Position</h2>
+        <div class="fixed">This element has a fixed position.</div>
+    </div>
+
+    <div class="container sticky-container">
+        <h2>Sticky Position</h2>
+        <div class="sticky">This element has a sticky position.</div>
+        <p>Scroll down to see the sticky effect.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
+        <p>Mauris egestas tellus non orci tempor, in mollis dolor vehicula. Sed at sem at nisl suscipit posuere.</p>
+        <p>Curabitur convallis, sapien nec iaculis luctus, libero erat cursus elit, a pharetra elit leo ac purus.</p>
+    </div>
+</body>
+</html>
